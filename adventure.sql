@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 16 mei 2024 om 12:51
+-- Gegenereerd op: 16 mei 2024 om 15:11
 -- Serverversie: 10.4.32-MariaDB
 -- PHP-versie: 8.2.12
 
@@ -91,6 +91,13 @@ CREATE TABLE `story` (
   `description` varchar(255) NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `story`
+--
+
+INSERT INTO `story` (`id`, `member_id`, `title`, `description`, `date`) VALUES
+(4, 3, 'ChatGpt', '4', '2024-05-09');
 
 -- --------------------------------------------------------
 
@@ -180,7 +187,7 @@ ALTER TABLE `messenger_messages`
 -- AUTO_INCREMENT voor een tabel `story`
 --
 ALTER TABLE `story`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`
